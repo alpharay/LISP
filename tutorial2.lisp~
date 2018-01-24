@@ -1,0 +1,11 @@
+(defun m-length (list)
+  (if (null list)
+      0
+    (+ 1 (m-length (cdr list)))))
+
+(defun print-list (list)
+  (if (not (null list))
+      (progn
+	(princ (car list))
+	(print-list (cdr-list)))))
+	     
